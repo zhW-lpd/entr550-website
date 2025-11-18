@@ -38,9 +38,16 @@ layout: default
   <div class="card-grid">
     <article class="info-card">
       <h3>Existing Tutor Directory</h3>
+      <p>Pick the Google Sheet for your school to view tutors who are currently available.</p>
       <ul class="link-list">
-        <li><strong>UMSI:</strong> <a href="https://docs.google.com/spreadsheets/d/1yysrhL4NU9YjcQxBL2rdFVTXEULv2Q7KedEoUycke6M/edit?usp=sharing">Google Sheet</a></li>
-        <li><strong>ECE/CSE:</strong> Link coming soon</li>
+        <li>
+          <strong>UMSI:</strong>
+          <a href="https://docs.google.com/spreadsheets/d/1yysrhL4NU9YjcQxBL2rdFVTXEULv2Q7KedEoUycke6M/edit?usp=sharing" target="_blank" rel="noopener">Google Sheet</a>
+        </li>
+        <li>
+          <strong>ECE/CSE:</strong>
+          <a href="https://docs.google.com/spreadsheets/d/12I3PiCiVA8ShNPx4MfZJ8IiDhGO19FkJGYP7-wUERRw/edit?usp=sharing" target="_blank" rel="noopener">Google Sheet</a>
+        </li>
       </ul>
     </article>
     <article class="info-card" id="registration">
@@ -55,6 +62,7 @@ layout: default
       <ul class="link-list">
         <li><a href="https://ece.engin.umich.edu/academics/undergraduate/advising/tutoring/">EE Undergraduate Tutoring Information</a></li>
         <li><a href="https://ecas.engin.umich.edu/">Engineering Center for Academic Success (ECAS)</a></li>
+        <li><a href="https://sites.google.com/umich.edu/umsitutoring/home">UMSI Tutoring &amp; Peer Support</a></li>
       </ul>
     </article>
     <article class="info-card">
