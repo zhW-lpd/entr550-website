@@ -38,7 +38,6 @@ layout: default
   <div class="card-grid">
     <article class="info-card">
       <h3>Existing Tutor Directory</h3>
-      <p>Pick the Google Sheet for your school to view tutors who are currently available.</p>
       <ul class="link-list">
         <li>
           <strong>UMSI:</strong>
@@ -64,30 +63,81 @@ layout: default
         <li><a href="https://ecas.engin.umich.edu/">Engineering Center for Academic Success (ECAS)</a></li>
         <li><a href="https://sites.google.com/umich.edu/umsitutoring/home">UMSI Tutoring &amp; Peer Support</a></li>
       </ul>
+      <p><em>Note: These resources are primarily for undergraduate courses.</em></p>
     </article>
-    <article class="info-card">
+    <article class="info-card" style="grid-column: 1 / -1; background: transparent; border: none; box-shadow: none; text-align: center;">
       <h3>Contact Information</h3>
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:peer.tutoring@umich.edu">peer.tutoring@umich.edu</a></li>
-      </ul>
+      <p><a href="mailto:peer.tutoring@umich.edu">peer.tutoring@umich.edu</a></p>
     </article>
   </div>
 </section>
 
 <section class="flyer-section" id="flyer">
-  <div class="pdf-card">
-    <div class="pdf-card__header">
-      <div>
-        <h2>Program Flyer</h2>
-        <p>Preview the flyer below or grab a copy to share with classmates.</p>
+  <div class="section-heading">
+    <h2>Program Flyers</h2>
+    <p>Download and share these flyers with your classmates to spread the word about peer tutoring.</p>
+  </div>
+  <div class="flyer-grid">
+    <div class="flyer-card">
+      <h3>UMSI Flyer</h3>
+      <div class="flyer-image">
+        <img src="assets/images/UMSI.png" alt="UMSI Peer Tutoring Flyer" loading="lazy">
       </div>
-      <div class="pdf-card__actions">
-        <a class="btn primary" href="flyer.pdf" target="_blank" rel="noopener">Open full screen</a>
-        <a class="btn secondary" href="flyer.pdf" download>Download PDF</a>
-      </div>
+      <a class="btn secondary" href="assets/images/UMSI.png" download>Download Image</a>
     </div>
-    <div class="pdf-card__embed" role="region" aria-label="Embedded flyer preview">
-      <iframe src="flyer.pdf#view=fitH" title="UM Peer Tutoring flyer" loading="lazy"></iframe>
+    <div class="flyer-card">
+      <h3>ECE/CSE Flyer</h3>
+      <div class="flyer-image">
+        <img src="assets/images/ECE and CSE.png" alt="ECE and CSE Peer Tutoring Flyer" loading="lazy">
+      </div>
+      <a class="btn secondary" href="assets/images/ECE and CSE.png" download>Download Image</a>
     </div>
   </div>
 </section>
+
+<style>
+.flyer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.flyer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flyer-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.flyer-image {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flyer-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.flyer-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.flyer-card .btn {
+  margin-top: 0.5rem;
+}
+</style>
